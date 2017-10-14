@@ -1,0 +1,17 @@
+	ostringstream convert;   
+	convert << lon;  
+	lons = convert.str();
+	convert << lat;  
+	lats = convert.str();
+	convert << log;  
+	logs = convert.str();
+	convert << lom;  
+	loms = convert.str();
+	convert << los;  
+	loss = convert.str();
+	convert << lag;  
+	lags = convert.str();
+	convert << lam;  
+	lams = convert.str();
+	convert << las;  
+	lass = convert.str();
