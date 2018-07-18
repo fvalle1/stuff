@@ -1,0 +1,508 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"Clear","[",RowBox[{"x",",","t",",","T",",","w",",","n",",","k",","," ","\[Omega]"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"T","[",RowBox[{"x_",",","t_"}],"]"}],":=",RowBox[{"1","+",RowBox[{"Exp","[",RowBox[
+{RowBox[{"k"," ","x"}],"-",RowBox[{"\[Omega]"," ","t"}]}],"]"}]}]}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"w","[",RowBox[{"x_",",","t_"}],"]"}],":=",RowBox[{"2",RowBox[{"D","[",RowBox[
+{RowBox[{"Log","[",RowBox[{"T","[",RowBox[{"x",",","t"}],"]"}],"]"}],",","x"}],"]"}]}]}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"n","[",RowBox[{"x_",",","t_"}],"]"}],":=",RowBox[{"D","[",RowBox[{RowBox[
+{"w","[",RowBox[{"x",",","t"}],"]"}],",","x"}],"]"}]}],"\[IndentingNewLine]",RowBox[
+{"T","[",RowBox[{"x",",","t"}],"]"}],"\[IndentingNewLine]",RowBox[{"w","[",RowBox[
+{"x",",","t"}],"]"}],"\[IndentingNewLine]",RowBox[{RowBox[{"n","[",RowBox[{"x",",","t"}],"]"}],"//","Simplify"}],"\[IndentingNewLine]"}],
+"Input",CellChangeTimes->{{3.7200046382124243`*^9,3.720004745324733*^9},{3.720005200790408*^9,3.720005250014402*^9}},
+ExpressionUUID->"6be7b3b4-746e-4bed-bd4d-f6c1e089ec9d",CellLabel->"In[1]:= "],Cell[
+BoxData[
+RowBox[{"1","+",SuperscriptBox["\[ExponentialE]",RowBox[{RowBox[{"k"," ","x"}],"-",RowBox[
+{"t"," ","\[Omega]"}]}]]}],StandardForm],"Output",CellID->20,CellLabel->"Out[5]= "],Cell[
+BoxData[
+FractionBox[RowBox[{"2"," ",SuperscriptBox["\[ExponentialE]",RowBox[{RowBox[{"k"," ","x"}],"-",RowBox[
+{"t"," ","\[Omega]"}]}]]," ","k"}],RowBox[{"1","+",SuperscriptBox["\[ExponentialE]",
+RowBox[{RowBox[{"k"," ","x"}],"-",RowBox[{"t"," ","\[Omega]"}]}]]}]],StandardForm],
+"Output",CellID->22,CellLabel->"Out[6]= "],Cell[
+BoxData[FractionBox[RowBox[{"2"," ",SuperscriptBox[
+"\[ExponentialE]",RowBox[{RowBox[{"k"," ","x"}],"+",RowBox[{"t"," ","\[Omega]"}]}]]," ",SuperscriptBox[
+"k","2"]}],SuperscriptBox[RowBox[{"(",RowBox[{SuperscriptBox["\[ExponentialE]",RowBox[
+{"k"," ","x"}]],"+",SuperscriptBox["\[ExponentialE]",RowBox[{"t"," ","\[Omega]"}]]}],")"}],
+"2"]],StandardForm],"Output",CellID->23,CellLabel->"Out[7]= "]},Open]],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"k","=","0.11"}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"\[Omega]","=","1"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"n","[",RowBox[
+{"x_",",","t_"}],"]"}],":=",FractionBox[RowBox[{"2"," ",SuperscriptBox["\[ExponentialE]",
+RowBox[{RowBox[{"k"," ","x"}],"+",RowBox[{"t"," ","\[Omega]"}]}]]," ",SuperscriptBox[
+"k","2"]}],SuperscriptBox[RowBox[{"(",RowBox[{SuperscriptBox["\[ExponentialE]",RowBox[
+{"k"," ","x"}]],"+",SuperscriptBox["\[ExponentialE]",RowBox[{"t"," ","\[Omega]"}]]}],")"}],
+"2"]]}],"\[IndentingNewLine]",RowBox[{"Animate","[",RowBox[{RowBox[{"Plot","[",RowBox[
+{RowBox[{"n","[",RowBox[{"x",",","t"}],"]"}],",",RowBox[{"{",RowBox[{"x",",","0",",","90"}],"}"}],",",RowBox[
+{"PlotPoints","->","30"}],",",RowBox[{"PlotRange","\[Rule]",RowBox[{"{",RowBox[{"0",",","0.007"}],"}"}]}]}],"]"}],",",RowBox[
+{"{",RowBox[{"t",",","0",",","10"}],"}"}]}],"]"}]}],"Input",CellChangeTimes->{{3.720004750206867*^9,3.720004779245255*^9},{3.720004814894774*^9,3.7200048928277597`*^9},{3.720004930738369*^9,3.720004994486164*^9},{3.720005036078562*^9,3.7200051562501783`*^9},3.7200052610817633`*^9,{3.720005312178371*^9,3.720005385548011*^9},{3.720005522469434*^9,3.720005528594706*^9}},
+ExpressionUUID->"e8c41a1d-4636-467a-8591-ff4b40675b74"],Cell[
+BoxData[TagBox[StyleBox[
+DynamicModuleBox[{Set[$CellContext`t$$,2.2920000000000016`],Set[Typeset`show$$,True],Set[
+Typeset`bookmarkList$$,{}],Set[Typeset`bookmarkMode$$,"Menu"],Typeset`animator$$,Set[
+Typeset`animvar$$,1],Set[Typeset`name$$,"\"untitled\""],Set[Typeset`specs$$,{{Hold[
+$CellContext`t$$],0,10}}],Set[Typeset`size$$,{360.,{119.,124.}}],Set[Typeset`update$$,
+0],Typeset`initDone$$,Set[Typeset`skipInitDone$$,True],Set[$CellContext`t$489261$$,
+0]},DynamicBox[Manipulate`ManipulateBoxes[1,StandardForm,RuleDelayed["Variables",
+{Set[$CellContext`t$$,0]}],RuleDelayed["ControllerVariables",{Hold[$CellContext`t$$,
+$CellContext`t$489261$$,0]}],RuleDelayed["OtherVariables",{Typeset`show$$,Typeset`bookmarkList$$,Typeset`bookmarkMode$$,Typeset`animator$$,Typeset`animvar$$,Typeset`name$$,Typeset`specs$$,Typeset`size$$,Typeset`update$$,Typeset`initDone$$,Typeset`skipInitDone$$}],
+RuleDelayed["Body",Plot[$CellContext`n[$CellContext`x,$CellContext`t$$],{$CellContext`x,0,90},
+PlotPoints->30,PlotRange->{0,0.007}]],RuleDelayed["Specifications",{{$CellContext`t$$,0,10,AppearanceElements->{"ProgressSlider","PlayPauseButton","FasterSlowerButtons","DirectionButton"}}}],
+RuleDelayed["Options",{ControlType->Animator,AppearanceElements->None,DefaultBaseStyle->"Animate",DefaultLabelStyle->"AnimateLabel",SynchronousUpdating->True,ShrinkingDelay->10.}],
+RuleDelayed["DefaultOptions",{}]],ImageSizeCache->{405.,{156.,162.}},SingleEvaluation->True],
+RuleDelayed[Deinitialization,None],RuleDelayed[DynamicModuleValues,{}],SynchronousInitialization->True,
+RuleDelayed[UndoTrackedVariables,{Typeset`show$$,Typeset`bookmarkMode$$}],RuleDelayed[
+UnsavedVariables,{Typeset`initDone$$}],RuleDelayed[UntrackedVariables,{Typeset`size$$}]],
+"Animate",Deployed->True,StripOnInput->False],Manipulate`InterpretManipulate[1]]],
+"Output",CellChangeTimes->{{3.720005526036964*^9,3.7200055296133547`*^9},3.720006778743968*^9},
+ExpressionUUID->"9406aa4d-c6e5-4235-8cb8-248193506a59"],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,127,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->181],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,126,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->180],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,125,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->179],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,124,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->177],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,123,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->176],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,122,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->175],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,121,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->174],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,120,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->172],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,119,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->171],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,118,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->170],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,117,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->169],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,116,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->167],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,115,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->166],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,114,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->165],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,113,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->164],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,112,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->162],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,111,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->161],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,110,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->160],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,109,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->159],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,108,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->157],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,107,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->156],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,106,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->155],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,105,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->154],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,104,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->152],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,103,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->151],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,102,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->150],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,101,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->149],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,100,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->147],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,99,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->146],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,98,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->145],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,97,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->144],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,96,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->142],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,95,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->141],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,94,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->140],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,93,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->139],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,92,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->137],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,91,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->136],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,90,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->135],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,89,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->134],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,88,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->132],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,87,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->131],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,86,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->130],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,85,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->129],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,84,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->127],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,83,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->126],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,82,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->125],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,81,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->124],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,80,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->122],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,79,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->121],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,78,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->120],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,77,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->119],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,76,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->117],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,75,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->116],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,74,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->115],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,73,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->114],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,72,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->112],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,71,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->111],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,70,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->110],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,69,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->109],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,68,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->107],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,67,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->106],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,66,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->105],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,65,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->104],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,64,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->102],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,63,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->101],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,62,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->100],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,61,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->99],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,60,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->97],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,59,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->96],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,58,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->95],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,57,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->94],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,56,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->92],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,55,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->91],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,54,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->90],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,53,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->89],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,52,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->87],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,51,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->86],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,50,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->85],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,49,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->84],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,48,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->82],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,47,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->81],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,46,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->80],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,45,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->79],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,44,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->77],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,43,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->76],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,42,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->75],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,41,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->74],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,40,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->72],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,39,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->71],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,38,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->70],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,37,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->69],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,32,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->62],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,31,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->61],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,30,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->60],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,29,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->59],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,24,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->52],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,23,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->51],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,22,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->50],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,21,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->49],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,16,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->42],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,15,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->41],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,14,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->40],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,13,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->39],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,8,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->32],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,7,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->31],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,6,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->30],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,5,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->29],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,4,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->27],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,3,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->26],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,2,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->25],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[\\\"0.003106551724137931`\\\", Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,1,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->24]},Open]],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"Clear","[",RowBox[{"x",",","t",",","T",",","w",",","n",",","k",","," ","\[Omega]"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"T","[",RowBox[{"x_",",","t_"}],"]"}],":=",RowBox[{"1","+",RowBox[{"Exp","[",RowBox[
+{RowBox[{RowBox[{"k"," ","^","3"}],"x"}],"-",RowBox[{"\[Omega]"," ","t"}]}],"]"}]}]}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"w","[",RowBox[{"x_",",","t_"}],"]"}],":=",RowBox[{"2",RowBox[{"D","[",RowBox[
+{RowBox[{"Log","[",RowBox[{"T","[",RowBox[{"x",",","t"}],"]"}],"]"}],",","x"}],"]"}]}]}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"n","[",RowBox[{"x_",",","t_"}],"]"}],":=",RowBox[{"D","[",RowBox[{RowBox[
+{"w","[",RowBox[{"x",",","t"}],"]"}],",","x"}],"]"}]}],"\[IndentingNewLine]",RowBox[
+{"T","[",RowBox[{"x",",","t"}],"]"}],"\[IndentingNewLine]",RowBox[{"w","[",RowBox[
+{"x",",","t"}],"]"}],"\[IndentingNewLine]",RowBox[{RowBox[{"n","[",RowBox[{"x",",","t"}],"]"}],"//","Simplify"}],"\[IndentingNewLine]"}],
+"Input",CellChangeTimes->{{3.7200046382124243`*^9,3.720004745324733*^9},{3.720005200790408*^9,3.720005250014402*^9},{3.7200054264935913`*^9,3.720005426651614*^9}},
+ExpressionUUID->"f2adc798-1fa0-4c9f-8570-ed5e5a0e5ba4"],Cell[
+BoxData[RowBox[{"1","+",SuperscriptBox[
+"\[ExponentialE]",RowBox[{RowBox[{SuperscriptBox["k","3"]," ","x"}],"-",RowBox[{"t"," ","\[Omega]"}]}]]}]],
+"Output",CellChangeTimes->{3.7200054283156548`*^9,3.720006778896771*^9},ExpressionUUID->"23affe1d-fea3-4158-8e3c-e0575cf74e15"],Cell[
+BoxData[
+FractionBox[RowBox[{"2"," ",SuperscriptBox["\[ExponentialE]",RowBox[{RowBox[{SuperscriptBox[
+"k","3"]," ","x"}],"-",RowBox[{"t"," ","\[Omega]"}]}]]," ",SuperscriptBox["k","3"]}],
+RowBox[{"1","+",SuperscriptBox["\[ExponentialE]",RowBox[{RowBox[{SuperscriptBox["k",
+"3"]," ","x"}],"-",RowBox[{"t"," ","\[Omega]"}]}]]}]]],"Output",CellChangeTimes->{3.7200054283156548`*^9,3.7200067789133387`*^9},
+ExpressionUUID->"683ad8a1-ecf1-45ac-ba6a-4c08a982133f"],Cell[
+BoxData[FractionBox[
+RowBox[{"2"," ",SuperscriptBox["\[ExponentialE]",RowBox[{RowBox[{SuperscriptBox["k",
+"3"]," ","x"}],"+",RowBox[{"t"," ","\[Omega]"}]}]]," ",SuperscriptBox["k","6"]}],
+SuperscriptBox[RowBox[{"(",RowBox[{SuperscriptBox["\[ExponentialE]",RowBox[{SuperscriptBox[
+"k","3"]," ","x"}]],"+",SuperscriptBox["\[ExponentialE]",RowBox[{"t"," ","\[Omega]"}]]}],")"}],
+"2"]]],"Output",CellChangeTimes->{3.7200054283156548`*^9,3.720006778925857*^9},ExpressionUUID->"e3fe4fca-1146-40a9-a7db-588943263bf3"]},
+Open]],Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{"n","[",RowBox[{"x_",",","t_"}],"]"}],":=",RowBox[
+{"12","+",RowBox[{RowBox[{"(",RowBox[{"3","+",RowBox[{"4",RowBox[{"Cosh","[",RowBox[
+{RowBox[{"2","x"}],"\[Minus]",RowBox[{"8","t"}]}],"]"}]}],"+",RowBox[{"Cosh","[",RowBox[
+{RowBox[{"4","x"}],"\[Minus]",RowBox[{"64","t"}]}],"]"}]}],")"}],"/",RowBox[{RowBox[
+{"(",RowBox[{RowBox[{"3",RowBox[{"Cosh","[",RowBox[{"x","\[Minus]",RowBox[{"28","t"}]}],"]"}]}],"+",RowBox[
+{"Cosh","[",RowBox[{RowBox[{"3","x"}],"\[Minus]",RowBox[{"36","t"}]}],"]"}]}],")"}],"^","2"}]}]}]}],"\[IndentingNewLine]",RowBox[
+{"n","[",RowBox[{"x",",","t"}],"]"}],"\[IndentingNewLine]",RowBox[{"Animate","[",RowBox[
+{RowBox[{"Plot","[",RowBox[{RowBox[{"n","[",RowBox[{"x",",","t"}],"]"}],",",RowBox[
+{"{",RowBox[{"x",",",RowBox[{"-","15"}],",","15"}],"}"}],",",RowBox[{"PlotPoints","->","30"}],",",RowBox[
+{"PlotRange","\[Rule]",RowBox[{"{",RowBox[{"12",",","13"}],"}"}]}]}],"]"}],",",RowBox[
+{"{",RowBox[{"t",",",RowBox[{"-","5"}],",","5"}],"}"}]}],"]"}]}],"Input",CellChangeTimes->{{3.720004750206867*^9,3.720004779245255*^9},{3.720004814894774*^9,3.7200048928277597`*^9},{3.720004930738369*^9,3.720004994486164*^9},{3.720005036078562*^9,3.7200051562501783`*^9},3.7200052610817633`*^9,{3.720005312178371*^9,3.720005385548011*^9},{3.720005453381607*^9,3.7200054906907883`*^9},{3.720005551264126*^9,3.720005551471451*^9},{3.720005728153659*^9,3.7200060574330072`*^9},{3.72000615990464*^9,3.7200061605759363`*^9}},
+ExpressionUUID->"3f89656a-537d-4c06-aa9e-9e3f8dede164"],Cell[
+BoxData[RowBox[{"12","+",FractionBox[
+RowBox[{"3","+",RowBox[{"Cosh","[",RowBox[{RowBox[{"64"," ","t"}],"-",RowBox[{"4"," ","x"}]}],"]"}],"+",RowBox[
+{"4"," ",RowBox[{"Cosh","[",RowBox[{RowBox[{"8"," ","t"}],"-",RowBox[{"2"," ","x"}]}],"]"}]}]}],
+SuperscriptBox[RowBox[{"(",RowBox[{RowBox[{"Cosh","[",RowBox[{RowBox[{"36"," ","t"}],"-",RowBox[
+{"3"," ","x"}]}],"]"}],"+",RowBox[{"3"," ",RowBox[{"Cosh","[",RowBox[{RowBox[{"28"," ","t"}],"-","x"}],"]"}]}]}],")"}],
+"2"]]}]],"Output",CellChangeTimes->{{3.7200054552834167`*^9,3.720005491120439*^9},3.7200055519511747`*^9,{3.720005799907823*^9,3.720006058017901*^9},3.7200061613588943`*^9,3.720006779067371*^9},
+ExpressionUUID->"ba5e9000-f552-408c-a38c-71bd0b4fe871"],Cell[
+BoxData[TagBox[StyleBox[
+DynamicModuleBox[{Set[$CellContext`t$$,-1.1920000000000002`],Set[Typeset`show$$,True],Set[
+Typeset`bookmarkList$$,{}],Set[Typeset`bookmarkMode$$,"Menu"],Typeset`animator$$,Set[
+Typeset`animvar$$,1],Set[Typeset`name$$,"\"untitled\""],Set[Typeset`specs$$,{{Hold[
+$CellContext`t$$],-5,5}}],Set[Typeset`size$$,{360.,{120.,124.}}],Set[Typeset`update$$,
+0],Typeset`initDone$$,Set[Typeset`skipInitDone$$,True],Set[$CellContext`t$489364$$,
+0]},DynamicBox[Manipulate`ManipulateBoxes[1,StandardForm,RuleDelayed["Variables",
+{Set[$CellContext`t$$,-5]}],RuleDelayed["ControllerVariables",{Hold[$CellContext`t$$,
+$CellContext`t$489364$$,0]}],RuleDelayed["OtherVariables",{Typeset`show$$,Typeset`bookmarkList$$,Typeset`bookmarkMode$$,Typeset`animator$$,Typeset`animvar$$,Typeset`name$$,Typeset`specs$$,Typeset`size$$,Typeset`update$$,Typeset`initDone$$,Typeset`skipInitDone$$}],
+RuleDelayed["Body",Plot[$CellContext`n[$CellContext`x,$CellContext`t$$],{$CellContext`x,-15,15},
+PlotPoints->30,PlotRange->{12,13}]],RuleDelayed["Specifications",{{$CellContext`t$$,-5,5,AppearanceElements->{"ProgressSlider","PlayPauseButton","FasterSlowerButtons","DirectionButton"}}}],
+RuleDelayed["Options",{ControlType->Animator,AppearanceElements->None,DefaultBaseStyle->"Animate",DefaultLabelStyle->"AnimateLabel",SynchronousUpdating->True,ShrinkingDelay->10.}],
+RuleDelayed["DefaultOptions",{}]],ImageSizeCache->{405.,{156.,162.}},SingleEvaluation->True],
+RuleDelayed[Deinitialization,None],RuleDelayed[DynamicModuleValues,{}],SynchronousInitialization->True,
+RuleDelayed[UndoTrackedVariables,{Typeset`show$$,Typeset`bookmarkMode$$}],RuleDelayed[
+UnsavedVariables,{Typeset`initDone$$}],RuleDelayed[UntrackedVariables,{Typeset`size$$}]],
+"Animate",Deployed->True,StripOnInput->False],Manipulate`InterpretManipulate[1]]],
+"Output",CellChangeTimes->{{3.7200054552834167`*^9,3.720005491120439*^9},3.7200055519511747`*^9,{3.720005799907823*^9,3.720006058017901*^9},3.7200061613588943`*^9,3.7200067791669292`*^9},
+ExpressionUUID->"60e2acb7-17c9-4fd1-99d7-02f1f6d5bfb6"],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,36,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->67],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,35,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->66],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,34,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->65],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,33,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->64],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,28,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->57],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,27,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->56],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,26,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->55],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,25,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->54],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,20,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->47],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,19,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->46],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,18,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->45],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,17,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->44],Cell[
+BoxData[TemplateBox[
+{"General","stop","\"Further output of \\!\\(\\*TagBox[StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \\\"ivar\\\"}], \\\"MessageName\\\"], Short[#1, 5] & ]\\) will be suppressed during this calculation.\"",2,8,12,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->37],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,11,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->36],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,10,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->35],Cell[
+BoxData[TemplateBox[
+{"General","ivar","\"\\!\\(\\*TagBox[RowBox[{\\\"-\\\", \\\"14.99896448275862`\\\"}], Short[#1, 5] & ]\\) is not a valid variable.\"",2,8,9,21985147126446889374,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",CellID->34]},Open]]},WindowSize->{1280,755},
+WindowMargins->{{0,Automatic},{Automatic,0}},StyleDefinitions->"Default.nb",FrontEndVersion->"10.0 for Wolfram Cloud Platform (June 2 2014)"]
